@@ -84,7 +84,22 @@ void display() {
     cout << "\n\nNumber of comparisons : " << cmp_count << endl;
     cout << "Number of data movements : " << mov_count << endl;
 }
+int main() {
+    char ch;
 
+    do {
+        input();
+        q_sort(0, n - 1);
+        display();
+        cout << "\n\nDo you want to continue? (y/n) : ";
+        cin >> ch;
+        if (ch == 'n' || ch == 'N')
+            break;
+
+        system("pause");
+        system("cls");
+
+    } while (true);
 
     int main(); {
         ;
