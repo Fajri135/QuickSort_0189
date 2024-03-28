@@ -67,13 +67,17 @@ void q_sort(int low, int high) {
         swap(low, j);
     }
 
+    // Recursive call to sort the left sub array
+    q_sort(low, j - 1); // Step 12
+
     // Recursive call to sort the right sub array
     q_sort(j + 1, high); // Step 13
 }
 
-    // Recursive call to sort the left sub array
-    q_sort(low, j - 1); // Step 12
-
+void display() {
+    cout << "\n----------------" << endl;
+    cout << "Sorted Array" << endl;
+    cout << "------------------" << endl;
 
 
     int main(); {
