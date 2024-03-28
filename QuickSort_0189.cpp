@@ -57,7 +57,12 @@ void q_sort(int low, int high) {
             j--; // Step 8
             cmp_count++;
         }
-    }
+            if (i < j) { // Step 9
+                // Swap the element at index i with the element at index j
+                swap(i, j);
+            }
+        }
+
     int main(); {
         ;
     }
