@@ -42,6 +42,10 @@ void q_sort(int low, int high) {
         return;
     }
 
+    pivot = arr[low]; // Step 2
+    i = low + 1; // Step 3
+    j = high; // Step 4
+
     int main(); {
         ;
     }
