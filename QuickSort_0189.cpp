@@ -46,6 +46,13 @@ void q_sort(int low, int high) {
     i = low + 1; // Step 3
     j = high; // Step 4
 
+    while (i <= j) { // Step 10
+        // Search for an element greater than pivot
+        while (arr[i] < pivot && i <= high) { // Step 7
+            i++; // Step 6
+            cmp_count++;
+        }
+    }
     int main(); {
         ;
     }
