@@ -62,6 +62,10 @@ void q_sort(int low, int high) {
                 swap(i, j);
             }
         }
+    if (low < j) { // Step 11
+        // Swap the pivot element with the element at index j
+        swap(low, j);
+    }
 
     int main(); {
         ;
